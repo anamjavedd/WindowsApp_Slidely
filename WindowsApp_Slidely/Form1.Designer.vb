@@ -30,9 +30,10 @@ Partial Class Form1
         ' btnViewSubmissions
         ' 
         btnViewSubmissions.BackColor = Color.FromArgb(CByte(255), CByte(236), CByte(153))
-        btnViewSubmissions.Location = New Point(285, 141)
+        btnViewSubmissions.Font = New Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnViewSubmissions.Location = New Point(270, 143)
         btnViewSubmissions.Name = "btnViewSubmissions"
-        btnViewSubmissions.Size = New Size(237, 29)
+        btnViewSubmissions.Size = New Size(265, 86)
         btnViewSubmissions.TabIndex = 0
         btnViewSubmissions.Text = "View Submissions (Ctrl+V)"
         btnViewSubmissions.UseVisualStyleBackColor = False
@@ -40,9 +41,10 @@ Partial Class Form1
         ' btnCreateSubmission
         ' 
         btnCreateSubmission.BackColor = Color.FromArgb(CByte(165), CByte(216), CByte(255))
-        btnCreateSubmission.Location = New Point(285, 196)
+        btnCreateSubmission.Font = New Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCreateSubmission.Location = New Point(270, 265)
         btnCreateSubmission.Name = "btnCreateSubmission"
-        btnCreateSubmission.Size = New Size(237, 31)
+        btnCreateSubmission.Size = New Size(265, 86)
         btnCreateSubmission.TabIndex = 1
         btnCreateSubmission.Text = "Create New Submission (Ctrl+N)"
         btnCreateSubmission.UseVisualStyleBackColor = False
@@ -50,15 +52,16 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(256, 73)
+        Label1.Font = New Font("Showcard Gothic", 15F)
+        Label1.Location = New Point(148, 63)
         Label1.Name = "Label1"
-        Label1.Size = New Size(293, 20)
+        Label1.Size = New Size(575, 31)
         Label1.TabIndex = 2
         Label1.Text = "John Doe, Slidely Task 2 - Slidely Form App"
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(Label1)

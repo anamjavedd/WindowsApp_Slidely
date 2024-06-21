@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ViewSubmissionsForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,129 +20,133 @@ Partial Class ViewSubmissionsForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Label1 = New Label()
-        lblName = New Label()
-        lblEmail = New Label()
-        lblPhoneNumber = New Label()
-        lblGithubLink = New Label()
+        Email = New Label()
+        PhoneNumber = New Label()
+        GithubLink = New Label()
         Label6 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
+        lblName = New TextBox()
+        lblEmail = New TextBox()
+        lblPhoneNumber = New TextBox()
+        lblGithubLink = New TextBox()
+        lblStopwatchTime = New TextBox()
         btnPrevious = New Button()
         btnNext = New Button()
+        Label2 = New Label()
+        btnEdit = New Button()
+        btnDelete = New Button()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(239, 42)
+        Label1.Font = New Font("Showcard Gothic", 15F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(124, 32)
         Label1.Name = "Label1"
-        Label1.Size = New Size(296, 20)
+        Label1.Size = New Size(574, 31)
         Label1.TabIndex = 0
         Label1.Text = "John Doe, Slidely Task 2 - View Submissions"
         ' 
-        ' lblName
+        ' Email
         ' 
-        lblName.AutoSize = True
-        lblName.Location = New Point(255, 92)
-        lblName.Name = "lblName"
-        lblName.Size = New Size(49, 20)
-        lblName.TabIndex = 1
-        lblName.Text = "Name"
+        Email.AutoSize = True
+        Email.Font = New Font("Tahoma", 10.2F)
+        Email.Location = New Point(167, 137)
+        Email.Name = "Email"
+        Email.Size = New Size(51, 21)
+        Email.TabIndex = 2
+        Email.Text = "Email"
         ' 
-        ' lblEmail
+        ' PhoneNumber
         ' 
-        lblEmail.AutoSize = True
-        lblEmail.Location = New Point(255, 138)
-        lblEmail.Name = "lblEmail"
-        lblEmail.Size = New Size(46, 20)
-        lblEmail.TabIndex = 2
-        lblEmail.Text = "Email"
+        PhoneNumber.AutoSize = True
+        PhoneNumber.Font = New Font("Tahoma", 10.2F)
+        PhoneNumber.Location = New Point(167, 179)
+        PhoneNumber.Name = "PhoneNumber"
+        PhoneNumber.Size = New Size(94, 21)
+        PhoneNumber.TabIndex = 3
+        PhoneNumber.Text = "Phone Num"
         ' 
-        ' lblPhoneNumber
+        ' GithubLink
         ' 
-        lblPhoneNumber.AutoSize = True
-        lblPhoneNumber.Location = New Point(239, 175)
-        lblPhoneNumber.Name = "lblPhoneNumber"
-        lblPhoneNumber.Size = New Size(86, 20)
-        lblPhoneNumber.TabIndex = 3
-        lblPhoneNumber.Text = "Phone Num"
-        ' 
-        ' lblGithubLink
-        ' 
-        lblGithubLink.AutoSize = True
-        lblGithubLink.Location = New Point(208, 220)
-        lblGithubLink.Name = "lblGithubLink"
-        lblGithubLink.Size = New Size(151, 20)
-        lblGithubLink.TabIndex = 4
-        lblGithubLink.Text = "Github Link For Task 2"
+        GithubLink.AutoSize = True
+        GithubLink.Font = New Font("Tahoma", 10.2F)
+        GithubLink.Location = New Point(167, 219)
+        GithubLink.Name = "GithubLink"
+        GithubLink.Size = New Size(175, 21)
+        GithubLink.TabIndex = 4
+        GithubLink.Text = "Github Link For Task 2"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(227, 262)
+        Label6.Font = New Font("Tahoma", 10.2F)
+        Label6.Location = New Point(167, 266)
         Label6.Name = "Label6"
-        Label6.Size = New Size(116, 20)
+        Label6.Size = New Size(130, 21)
         Label6.TabIndex = 5
         Label6.Text = "Stopwatch Time"
         ' 
-        ' TextBox1
+        ' lblName
         ' 
-        TextBox1.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Location = New Point(367, 92)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
-        TextBox1.TabIndex = 6
+        lblName.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
+        lblName.BorderStyle = BorderStyle.FixedSingle
+        lblName.Location = New Point(367, 92)
+        lblName.Name = "lblName"
+        lblName.ReadOnly = True
+        lblName.Size = New Size(331, 27)
+        lblName.TabIndex = 6
         ' 
-        ' TextBox2
+        ' lblEmail
         ' 
-        TextBox2.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
-        TextBox2.BorderStyle = BorderStyle.FixedSingle
-        TextBox2.Location = New Point(367, 131)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(125, 27)
-        TextBox2.TabIndex = 7
+        lblEmail.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
+        lblEmail.BorderStyle = BorderStyle.FixedSingle
+        lblEmail.Location = New Point(367, 131)
+        lblEmail.Name = "lblEmail"
+        lblEmail.ReadOnly = True
+        lblEmail.Size = New Size(331, 27)
+        lblEmail.TabIndex = 7
         ' 
-        ' TextBox3
+        ' lblPhoneNumber
         ' 
-        TextBox3.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
-        TextBox3.BorderStyle = BorderStyle.FixedSingle
-        TextBox3.Location = New Point(367, 173)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(125, 27)
-        TextBox3.TabIndex = 8
+        lblPhoneNumber.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
+        lblPhoneNumber.BorderStyle = BorderStyle.FixedSingle
+        lblPhoneNumber.Location = New Point(367, 173)
+        lblPhoneNumber.Name = "lblPhoneNumber"
+        lblPhoneNumber.ReadOnly = True
+        lblPhoneNumber.Size = New Size(331, 27)
+        lblPhoneNumber.TabIndex = 8
         ' 
-        ' TextBox4
+        ' lblGithubLink
         ' 
-        TextBox4.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
-        TextBox4.BorderStyle = BorderStyle.FixedSingle
-        TextBox4.Location = New Point(367, 213)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(125, 27)
-        TextBox4.TabIndex = 9
+        lblGithubLink.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
+        lblGithubLink.BorderStyle = BorderStyle.FixedSingle
+        lblGithubLink.Location = New Point(367, 213)
+        lblGithubLink.Name = "lblGithubLink"
+        lblGithubLink.ReadOnly = True
+        lblGithubLink.Size = New Size(331, 27)
+        lblGithubLink.TabIndex = 9
         ' 
-        ' TextBox5
+        ' lblStopwatchTime
         ' 
-        TextBox5.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
-        TextBox5.BorderStyle = BorderStyle.FixedSingle
-        TextBox5.Location = New Point(367, 260)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(125, 27)
-        TextBox5.TabIndex = 10
+        lblStopwatchTime.BackColor = Color.FromArgb(CByte(233), CByte(236), CByte(239))
+        lblStopwatchTime.BorderStyle = BorderStyle.FixedSingle
+        lblStopwatchTime.Location = New Point(367, 260)
+        lblStopwatchTime.Name = "lblStopwatchTime"
+        lblStopwatchTime.ReadOnly = True
+        lblStopwatchTime.Size = New Size(331, 27)
+        lblStopwatchTime.TabIndex = 10
         ' 
         ' btnPrevious
         ' 
         btnPrevious.AutoEllipsis = True
         btnPrevious.BackColor = Color.FromArgb(CByte(255), CByte(236), CByte(153))
-        btnPrevious.Location = New Point(239, 345)
+        btnPrevious.Font = New Font("Showcard Gothic", 11F)
+        btnPrevious.Location = New Point(197, 377)
         btnPrevious.Name = "btnPrevious"
-        btnPrevious.Size = New Size(189, 29)
+        btnPrevious.Size = New Size(231, 51)
         btnPrevious.TabIndex = 11
         btnPrevious.Text = "PREVIOUS (CTRL + P)"
         btnPrevious.UseVisualStyleBackColor = False
@@ -150,48 +154,85 @@ Partial Class ViewSubmissionsForm
         ' btnNext
         ' 
         btnNext.BackColor = Color.FromArgb(CByte(165), CByte(216), CByte(255))
-        btnNext.Location = New Point(434, 345)
+        btnNext.Font = New Font("Showcard Gothic", 11F)
+        btnNext.Location = New Point(434, 377)
         btnNext.Name = "btnNext"
-        btnNext.Size = New Size(180, 29)
+        btnNext.Size = New Size(231, 51)
         btnNext.TabIndex = 12
         btnNext.Text = "NEXT (CTRL + N)"
         btnNext.UseVisualStyleBackColor = False
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Tahoma", 10.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(167, 98)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(53, 21)
+        Label2.TabIndex = 13
+        Label2.Text = "Name"
+        ' 
+        ' btnEdit
+        ' 
+        btnEdit.Font = New Font("Showcard Gothic", 11F)
+        btnEdit.Location = New Point(247, 325)
+        btnEdit.Name = "btnEdit"
+        btnEdit.Size = New Size(95, 39)
+        btnEdit.TabIndex = 14
+        btnEdit.Text = "Edit"
+        btnEdit.UseVisualStyleBackColor = True
+        ' 
+        ' btnDelete
+        ' 
+        btnDelete.Font = New Font("Showcard Gothic", 11F)
+        btnDelete.Location = New Point(492, 325)
+        btnDelete.Name = "btnDelete"
+        btnDelete.Size = New Size(95, 39)
+        btnDelete.TabIndex = 15
+        btnDelete.Text = "Delete"
+        btnDelete.UseVisualStyleBackColor = True
         ' 
         ' ViewSubmissionsForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(btnDelete)
+        Controls.Add(btnEdit)
+        Controls.Add(Label2)
         Controls.Add(btnNext)
         Controls.Add(btnPrevious)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Label6)
+        Controls.Add(lblStopwatchTime)
         Controls.Add(lblGithubLink)
         Controls.Add(lblPhoneNumber)
         Controls.Add(lblEmail)
         Controls.Add(lblName)
+        Controls.Add(Label6)
+        Controls.Add(GithubLink)
+        Controls.Add(PhoneNumber)
+        Controls.Add(Email)
         Controls.Add(Label1)
         Name = "ViewSubmissionsForm"
+        Padding = New Padding(0, 0, 10, 0)
         Text = "Form2"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents lblName As Label
-    Friend WithEvents lblEmail As Label
-    Friend WithEvents lblPhoneNumber As Label
-    Friend WithEvents lblGithubLink As Label
+
+    Friend WithEvents Email As Label
+    Friend WithEvents PhoneNumber As Label
+    Friend WithEvents GithubLink As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents lblName As TextBox
+    Friend WithEvents lblEmail As TextBox
+    Friend WithEvents lblPhoneNumber As TextBox
+    Friend WithEvents lblGithubLink As TextBox
+    Friend WithEvents lblStopwatchTime As TextBox
     Friend WithEvents btnPrevious As Button
     Friend WithEvents btnNext As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnEdit As Button
+    Friend WithEvents btnDelete As Button
 End Class
